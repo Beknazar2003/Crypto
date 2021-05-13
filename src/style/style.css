@@ -344,7 +344,7 @@ td .purple-text {
 .isfogot,
 .offcanvas-header,
 .nav-social,
-button[data-trigger="navbar_main"] {
+button[data-trigger='navbar_main'] {
   display: none;
 }
 .nav-social ul li {
@@ -357,29 +357,38 @@ button[data-trigger="navbar_main"] {
 .nav-social {
   margin: 100px auto 0;
 }
+.btn-closer{
+  margin-right: -47px;
+}
 @media all and (max-width: 991px) {
-  .offcanvas-header, .nav-social, button[data-trigger="navbar_main"] {
+  .offcanvas-header,
+  .nav-social,
+  button[data-trigger='navbar_main'] {
     display: block;
   }
-  .home-header{
+  .home-header {
     background-image: url('../img/mobileBack.png');
   }
-  section,header,footer, section .container{
+  section,
+  header,
+  footer,
+  section .container {
     width: 100%;
     flex-wrap: wrap;
     overflow: hidden;
   }
-  .offer-text h1{
+  .offer-text h1 {
     font-size: 35px;
   }
-  .offer-text p{
+  .offer-text p {
     margin: 50px 0;
   }
-  section *,section .container *{
+  section *,
+  section .container * {
     flex-wrap: wrap;
     margin: 30px auto;
   }
-  section img{
+  section img {
     width: 100%;
   }
   .mobile-offcanvas {
@@ -403,10 +412,11 @@ button[data-trigger="navbar_main"] {
     width: 80%;
     background: #fff;
   }
-  .navbar-collapse li{
-    color: #090F3F;
-
+  .mobile-offcanvas li {
+    padding: 8px 0;
+    margin: 0;
   }
+
   .mobile-offcanvas .container,
   .mobile-offcanvas .container-fluid {
     display: block;

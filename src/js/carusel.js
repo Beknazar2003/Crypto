@@ -1,10 +1,8 @@
-const start = (screen) => {
-  console.log('screen ', screen)
-
+const start = () => {
   $('.autoplay-carusel')
     .not('.slick-initialized')
     .slick({
-      slidesToShow: screen > 900 ? 3 : 2,
+      slidesToShow: 3,
       slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 2000,
@@ -13,20 +11,33 @@ const start = (screen) => {
         '<i class="fa fa-angle-left btn-carusel" aria-hidden="true"></i>',
       nextArrow:
         '<i class="fa fa-angle-right btn-carusel" aria-hidden="true"></i>',
+      responsive: [
+        {
+          breakpoint: 900,
+          settings: {
+            slidesToShow: 2,
+          },
+        },
+      ],
     })
   $('.card-verlical-list')
     .not('.slick-initialized')
     .slick({
-      slidesToShow: screen > 900 ? 4 : 2,
+      slidesToShow: 4,
       slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 2000,
+      responsive: [
+        {
+          breakpoint: 900,
+          settings: {
+            slidesToShow: 2,
+          },
+        },
+      ]
     })
 }
 
 $(document).ready(() => {
-  start(window.screen.width)
-  $(window).resize(() => {
-    start(window.screen.width)
-  })
+  start()
 })
