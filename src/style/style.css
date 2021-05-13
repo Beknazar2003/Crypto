@@ -18,7 +18,7 @@ h6 {
   font-weight: 700;
   font-family: Rubik;
 }
-.navbar-collapse{
+.navbar-collapse {
   font-size: 13px;
 }
 .navbar li {
@@ -28,7 +28,7 @@ h6 {
   display: flex;
   align-items: center;
 }
-.navbar-brand{
+.navbar-brand {
   margin-right: 13rem;
 }
 .btn-contact {
@@ -337,9 +337,74 @@ td .purple-text {
 .auth-form input {
   padding: 15px;
 }
-.auth-container{
+.auth-container {
   margin: 100px auto;
 }
-.isregist , .isfogot{
+.isregist,
+.isfogot,
+.offcanvas-header,
+.nav-social,
+button[data-trigger="navbar_main"] {
   display: none;
+}
+.nav-social ul li {
+  list-style: none;
+  padding: 17px;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(11, 6, 12, 0.5);
+}
+.nav-social {
+  margin: 100px auto 0;
+}
+@media all and (max-width: 991px) {
+  .offcanvas-header, .nav-social, button[data-trigger="navbar_main"] {
+    display: block;
+  }
+  .home-header{
+    background-image: url('../img/mobileBack.png');
+  }
+  section,header,footer, section .container{
+    width: 100%;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+  .offer-text h1{
+    font-size: 35px;
+  }
+  .offer-text p{
+    margin: 50px 0;
+  }
+  section *,section .container *{
+    flex-wrap: wrap;
+    margin: 30px auto;
+  }
+  section img{
+    width: 100%;
+  }
+  .mobile-offcanvas {
+    visibility: hidden;
+    transform: translateX(-100%);
+    border-radius: 0;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 1200;
+    width: 80%;
+    overflow-x: hidden;
+    transition: visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+
+  .mobile-offcanvas.show {
+    visibility: visible;
+    transform: translateX(0);
+    background-color: #cf1257;
+    width: 80%;
+  }
+  .mobile-offcanvas .container,
+  .mobile-offcanvas .container-fluid {
+    display: block;
+  }
 }

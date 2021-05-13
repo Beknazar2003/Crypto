@@ -14,16 +14,16 @@
 
 <body>
     <header class="home-header">
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <button data-trigger="navbar_main" class="btn float-end" type="button"> <img src="src/img/nav-togler.svg"
+                alt=""></button>
+        <nav id="navbar_main" class="mobile-offcanvas navbar navbar-expand-lg navbar-dark bg-primary">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">
-                <img src="src/img/logo.svg">
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <div class="offcanvas-header">
+                    <button class="btn-closer rounded-circle btn-outline-light shadow-sm float-end">&#10005;</button>
+                </div>
+                <a class="navbar-brand" href="#"><img src="src/img/logo.svg"></a>
+
+                <ul class="navbar-nav navbar-collapse">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">HOME</a>
                     </li>
@@ -47,9 +47,17 @@
                                 href="./pages/auth.html">CONTACT US</a></button>
                     </li>
                 </ul>
+                <div class="nav-social">
+                    <ul class="d-flex justify-content-between">
+                        <li class="rounded-circle"><i class="fa fa-twitter fa-1x"></i></li>
+                        <li class="rounded-circle"><i class="fa fa-facebook fa-1x"></i></li>
+                        <li class="rounded-circle"><i class="fa fa-youtube fa-1x"></i></li>
+                        <li class="rounded-circle"><i class="fa fa-skype fa-1x"></i></li>
+                        <li class="rounded-circle"><i class="fa fa-pinterest fa-1x"></i></li>
+                    </ul>
+                </div>
             </div>
-            </div>
-          </nav>
+        </nav>
         <div class="container">
             <div class="offer">
                 <div class="offer-text">
@@ -176,8 +184,7 @@
             <div class="section-text">
                 <span class="purple"></span> 04. ROADMAP
                 <h1>
-                    LImplementation Sheet
-                </h1>
+                    Implementation Sheet </h1>
                 <p class="text-muted">
                     At Lymcoin we have one focus - creating a viable data marketplace to start returning value
                     to token holders in the shortest time possible.
@@ -536,7 +543,7 @@
                     <form action="#" class="footer-form">
                         <div class="input-group-footer mb-3">
                             <input type="text" class="form-control" placeholder="Enter your Email">
-                            <button class="btn btn-warning" type="submit">Button</button>                            
+                            <button class="btn btn-warning" type="submit">Button</button>
                         </div>
                         <div class="form-check text-start">
                             <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
@@ -568,6 +575,7 @@
     <script src="src/libs/fa.js"></script>
     <script src="src/libs/google.api.js"></script>
     <script src="src/js/chart.js"></script>
+    <script src="src/js/navbar.js"></script>
 </body>
 
 </html>
