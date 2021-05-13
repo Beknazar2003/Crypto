@@ -18,10 +18,7 @@ h6 {
   font-weight: 700;
   font-family: Rubik;
 }
-#navbarNav {
-  margin-top: 5px;
-  display: flex;
-  justify-content: flex-end;
+.navbar-collapse{
   font-size: 13px;
 }
 .navbar li {
@@ -30,6 +27,9 @@ h6 {
 .nav-item {
   display: flex;
   align-items: center;
+}
+.navbar-brand{
+  margin-right: 13rem;
 }
 .btn-contact {
   background: #090f3f;
@@ -342,12 +342,4 @@ td .purple-text {
 }
 .isregist , .isfogot{
   display: none;
-}
-
-
-@media screen and(max-width: 980px) {
-  body
-  {
-    display: none;
-  }
 }
