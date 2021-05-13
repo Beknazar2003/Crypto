@@ -400,8 +400,12 @@ button[data-trigger="navbar_main"] {
   .mobile-offcanvas.show {
     visibility: visible;
     transform: translateX(0);
-    background-color: #cf1257;
     width: 80%;
+    background: #fff;
+  }
+  .navbar-collapse li{
+    color: #090F3F;
+
   }
   .mobile-offcanvas .container,
   .mobile-offcanvas .container-fluid {
